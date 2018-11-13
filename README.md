@@ -1,33 +1,33 @@
 # Steps to run hexo website
-1. Install hexo cli.
+Install hexo cli.
 
 ```bash
 $ npm install -g hexo-cli
 ```
 
-1. Generate hexo website.
+Generate hexo website.
 
 ```bash
 $ hexo init aikmeng-blog
 ```
 
-1. Install dependencies to run website.
+Install dependencies to run website.
 ```bash
 $ cd aikmeng-blog/
 $ npm install
 ```
 
-1. Run website
+Run website
 ```bash
 $ hexo server
 ```
 
-1. Install deployment module
+Install deployment module
 ```bash
 $ npm install hexo-deployer-git --save
 ```
 
-1. Configure _config.yml
+Configure _config.yml
 ```yaml
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
@@ -37,13 +37,13 @@ deploy:
   branch: master
 ```
 
-1. Deployment
+Deployment
 ```bash
 $ hexo clean
 $ hexo deploy
 ```
 
-1. Push to Git for version control
+Push to Git for version control
 ```bash
 $ git init
 $ git remote add origin git@github.com:aikmeng/aikmeng-blog.git
@@ -51,14 +51,21 @@ $ git remote add origin git@github.com:aikmeng/aikmeng-blog.git
 
 # Creating blog posts
 
-1. Create new hexo post
+Create new hexo post
 ``` bash
 $ hexo new "My First Post"
 ```
 
-2. Modify My-First-Post.md
+Modify My-First-Post.md
+```markdown
+title: My First Post
+date: 2018-11-14 03:22:01
+tags:
 
-1. Deployment
+Hello World!
+```
+
+Deploy blog post
 ```bash
 $ hexo clean
 $ hexo deploy

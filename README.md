@@ -49,6 +49,26 @@ $ git init
 $ git remote add origin git@github.com:aikmeng/aikmeng-blog.git
 ```
 
+# Configure new theme
+Find a [theme](https://hexo.io/themes/)
+
+Get the theme
+
+```bash
+$ git clone git://github.com/probberechts/hexo-theme-cactus themes/cactus
+```
+
+Preview website
+```bash
+$ hexo server
+```
+
+Deploy blog post
+```bash
+$ hexo clean
+$ hexo deploy
+```
+
 # Creating blog posts
 
 Create new hexo post

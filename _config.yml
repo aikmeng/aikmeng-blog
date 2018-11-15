@@ -81,4 +81,3 @@ deploy:
   type: git
   repo: git@github.com:aikmeng/aikmeng.github.io.git
   branch: master
-
